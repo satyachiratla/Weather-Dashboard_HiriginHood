@@ -1,6 +1,7 @@
 import toast from "react-hot-toast";
 
-const URL = "http://localhost:8000/favouriteCities";
+// const URL = "http://localhost:8000/favouriteCities";
+const URL = import.meta.env.VITE_JSON_SERVER_API;
 
 export const getFavouriteCities = async () => {
   try {
